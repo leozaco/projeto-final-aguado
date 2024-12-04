@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+nav {
+    background-color: rgb(241, 147, 6);
+    color: bisque;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    line-height: 56px;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+    margin: 0 1px;
+    
+}
+
+nav ul li a:visited {
+    color: grey;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: 20px;
+    transform: scale(1.05);
+    transition: transform 0.25s;
+}
+
+nav ul li a:active {
+    color: rgb(56, 56, 151);
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+/* Estilo do botão de login */
+#loginBtn {
+    padding: 0px 120px;
+    background-color: rgb(241, 147, 6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    
+   
+}
+
+#loginBtn:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s;
+}
+/* Estilo do pop-up oculto */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do conteúdo do pop-up */
+.popup-content {
+    background-color: rgb(34, 32, 32);
+    font-size: 20px;
+    font: 0; color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+}
+
+/* Estilo do botão de fechar (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button.submit {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    color: #333;
+    padding: 1px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.submit:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2%;
+    flex: 1;
+}
+
+.total{
+    width: 100%;
+}
+
+.detalhes{
+    background-color: rgb(178, 184, 190);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.detalhe{
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cifra, .video {
+    display: none; /* Oculta as cifras e vídeos inicialmente */
+    margin-top: 10px; /* Espaçamento acima */
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.titulo-cifra {
+    cursor: pointer; /* Indica que é clicável */
+    font-weight: bold; /* Destaque do título */
+    color: rgb(241, 147, 6); /* Cor do título */
+    margin: 10px 0; /* Espaçamento entre os títulos */
+}
+
+iframe {
+    width: 100%; /* Largura do vídeo */
+    height: 315px; /* Altura do vídeo */
+    border-radius: 5px; /* Cantos arredondados para o vídeo */
+}
+@media only screen and (max-width: 768px) {
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+    
+        nav ul li {
+            margin-bottom: 10px; 
+            width: 100%;
+            text-align: center;
+        }
+    
+    
+    h1, h2, h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+    p, ul li {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+
+    .popup-content {
+        width: 75%;
+        padding: 15px;
+    }
+
+
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
